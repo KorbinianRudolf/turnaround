@@ -37,7 +37,7 @@ function callCommand(alpha) {
 }
 
 function finale(){
-    document.getElementsByTagName('body').style.background = 'url(gotyou.jpg)';
+    document.body.style.backgroundImage = "url('gotyou.jpg')";
 }
 
 
