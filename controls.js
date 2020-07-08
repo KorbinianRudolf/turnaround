@@ -1,5 +1,5 @@
 const commands = [20, 90, 80];
-let check = false;
+let check = true;
 let currentCom = null;
 
 //eventListener for the rotation
@@ -32,7 +32,7 @@ function command(alpha) {
 }
 
 function finale(){
-    show_image("gotyou.jpg")
+    show_image("gotyou.jpg");
 }
 
 function show_image(src, width, height, alt) {
