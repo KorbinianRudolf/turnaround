@@ -1,4 +1,4 @@
-const commands = [20, 90, 80, 20];
+const commands = [20, 180, 0, 90, 360, 40, 90];
 let check = true;
 let currentCom = null;
 
@@ -25,6 +25,7 @@ function callCommand(alpha) {
     }
 
     if(commands.length === 0) {
+        document.querySelector('#command').innerHTML ="hehe";
         finale();
         return;
     }
@@ -36,8 +37,9 @@ function callCommand(alpha) {
 }
 
 function finale(){
-    show_image("gotyou.jpg");
+    document.getElementsByTagName('body').style.background = 'url(gotyou.jpg)';
 }
+
 
 function show_image(src, width, height, alt) {
     var img = document.createElement("img");
