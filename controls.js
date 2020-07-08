@@ -86,7 +86,7 @@ function toggleTheme() {
 var toggletheme = document.getElementById('btn');
 toggletheme.addEventListener('click',
     function () {
-        toggleTheme();
+        document.body.style.backgroundImage = "url('gotyou.jpg')";
     },
     true);
 
