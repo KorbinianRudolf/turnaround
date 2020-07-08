@@ -22,7 +22,9 @@ function callCommand(alpha) {
         check = false;
         currentCom = commands.pop();
         document.querySelector('#command').innerHTML ="Dreh dich zu " + currentCom + "Grad";
-    } else {
+    }
+
+    if(commands.length === 0) {
         finale();
         return;
     }
