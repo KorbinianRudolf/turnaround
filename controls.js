@@ -1,4 +1,4 @@
-const commands = [20, 90, 80];
+const commands = [20, 90, 80, 20];
 let check = true;
 let currentCom = null;
 
