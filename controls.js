@@ -17,7 +17,7 @@ window.addEventListener("deviceorientation", function(event) {
 
 
 function callCommand(alpha) {
-    document.querySelector('#command').innerHTML ="test";
+
     if(commands.length > 0 && check) {
         check = false;
         currentCom = commands.pop();
