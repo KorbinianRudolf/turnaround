@@ -16,10 +16,11 @@ window.addEventListener("deviceorientation", function(event) {
 
 
 function command(alpha) {
+
     if(commands.length > 0 && check) {
         check = false;
         currentCom = commands.pop();
-        document.querySelector('#ccommand').innerHTML ="Dreh dich zu " + currentCom + "Grad";
+        document.querySelector('#command').innerHTML ="Dreh dich zu " + currentCom + "Grad";
     } else {
         finale();
         return;
