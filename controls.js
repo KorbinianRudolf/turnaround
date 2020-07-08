@@ -10,13 +10,14 @@ window.addEventListener("deviceorientation", function(event) {
     const gamma = Math.round(event.gamma);
 
     current(alpha);
+    document.querySelector('#command').innerHTML ="test";
     command(alpha);
 
 }, true);
 
 
 function command(alpha) {
-    document.querySelector('#command').innerHTML ="test";
+
     if(commands.length > 0 && check) {
         check = false;
         currentCom = commands.pop();
